@@ -1,0 +1,217 @@
+Day-01[14-03-2023]:
+===================
+	Good Morning to All...
+
+	Python versions:
+	================
+		- python 2.x
+		- python 3.x
+
+	Python Downlods:
+	================
+		- python.org
+		- downloads
+		- python releases
+			- stable 
+			- pre release
+		- cnrl + f => python 3.x
+		- windows x86-64 executeable installer
+
+	Python Installation:
+	====================
+		- Setup => double tap
+		- 2 options
+			- install now => [Default path]
+			- customize installation [User defined location]
+		- 2 checkboxes
+			- install for all users
+			- add python 3.x to path
+
+	Python Version Check:
+	=====================
+		- cmd
+		- python -V
+
+	Pip:
+	====
+		- To install third party packages like [jupyter,pandas,numpy,matplotlib,django,flask]
+
+	Pip version check:
+	==================
+		- cmd
+		- pip -V
+
+	Pip Upgrade:
+	============
+		- cmd
+		- python -m pip install --upgrade pip
+		- pip -V
+
+	Jupyter notebook Installation:
+	==============================
+		- cmd
+		- pip install jupyter notebook
+
+	Jupyter notebook Running:
+	=========================
+		- cmd
+		- jupyter notebook
+
+	Python Basics:
+	==============
+		Variables:
+		==========
+			- To store a value
+			- To change a value
+			Syntax:
+				variablename = value
+
+		Variable Assignments:
+		=====================
+			- single value = single value
+			- n number of variables = n number of values
+			- n number of variables = single value
+
+		Data types:
+		===========
+			- int
+			- float
+			- string
+			- boolean
+			- complex
+			- none
+			- All Data Structures like [list,tuple,set and dictionary]
+
+		Type method:
+		============
+			- to know the data type of a variable based on a value
+			Syntax:
+				type(variablename)
+		
+	Function an its types:
+	======================
+		- To perform a specific task
+		- 2 types
+			- predefined
+			- user defined
+		Syntax:
+		=======
+			def functionname(arguments):
+				//stmnts
+				return return_value
+
+	User Defined Types:
+	===================
+		- with returntype and with arguments
+		- with returntype and without arguments
+		- without returntype and with arguments
+		- without returntype and without arguments	  
+
+	Function argument types:
+	========================
+		- Default argument
+			=> Default Values are assigned to a variables based on right to left preference
+		- Required or Positional argument
+			=> Equal parameter values are passed to a function while a function is created
+		- Keyword argument
+			=> Key names should be equal in function call and as in function but it can pass in unordered with same key names
+		- Variable-Length argument
+			=> It has a preference for a variable and then tuple and finally a dictionary while a function is created	
+
+	Django Installation:
+	====================
+		- cmd
+		- pip install django==3.0
+				or
+		  pip install django [Latest Version of Django]
+
+	Django Version Check:
+	=====================
+		- cmd
+		- django-admin --version
+	
+	Project Creation:
+	=================
+		- select a particular folder and open the path by using cmd
+		- django-admin startproject "projectname"
+
+	Running of Project:
+	==================
+		- cmd
+		- manage.py runserver
+					or
+	      python manage.py runserver
+		- Port number changes
+			=> manage.py runserver portnumber
+			We need to access the url by passing the port number after local ip or host and default port for django is "8000"
+				http://127.0.0.1:8000
+				http://localhost:8000
+			=> http://127.0.0.1:new portnumber
+			   http://localhost:new portnumber
+
+
+	Admin App:
+	==========
+		- After Creating we need to navigate where a project folder exists it consists of one folder and one file
+			=> Projectname [Admin App]
+			=> manage.py [Main service file]
+		- In Admin app it consists of some files created when a project is created
+			- init => It is to be considered as python file
+			- asgi => Asynchronous Gateway Interface
+			- wsgi => Web Server Gateway Interface
+			- urls => For urls checking in a project
+			- settings => For all configurations like userapp,host,database,templates,static and email
+
+	UserApp Creation:
+	=================
+		- Open cmd where manage.py file exists then we need to type a command such as 
+			=> manage.py startapp "appname"
+						or
+			   python manage.py startapp "appname"
+			=> Another process to create an app by using django-admin
+			   django-admin startapp "appname"
+	    - After Creating an userapp it creates some files in it such as
+	    	- init => It is to be considered as python file
+	    	- admin => Configuration for admin to access the user app models
+	    	- apps => It configures the userapp
+	    	- models => Creating of Tables with different fields
+	    	- test => For testing purposes like [unit and blackbox] 
+	    	- views => It is used mainly for creating business logic implementations
+
+	Interface between urls and controllers
+
+	Packages and Modules:
+	=====================
+		package => folder
+			=> collection of modules,sub-packages
+		module => file [.py]
+			=> collection of variables,functions,class,objects and methods
+
+	Importing of modules:
+	=====================
+		- import modulename
+		- from packagename.modulename import function or class
+		- from packagename import modulename
+		- from packagename.modulename import function or class as aliasname
+
+	path():
+	=======
+		path('urlname',modulename.functionname)
+		=> We can pass a single or multiple value along with the urlname such as like
+			path('urlname/<datatype:variablename>/....',modulename.functionname)
+
+	HttpRequest and HttpResponse
+	Interface between Urls and Views [Controllers]
+	Dynamic Url Mapping with single and two parameters
+
+	HttpResponse with html tag
+
+	Task:
+	=====
+		- Introduction to Django
+		- Advantages and Disadvantages
+		- Applications of Django
+		- Frameworks in Python
+		- HTML5 Tags,CSS3 Stylings
+		- HTML Form controls
+		- Banking Application by using OOPS Concept in Python
