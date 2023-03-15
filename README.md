@@ -10,3 +10,13 @@ Django For 2nd Years AIML
   - Running of Django Project, Interface between Controllers
   - HttpResponse with string and Html tag
   - Dynamic Url Mapping with single and two parameters with sample examples on each
+
+# Day-02(15-03-2023):
+  - HttpRespose with html and css
+  - HttpResponse with html and Inline css styling
+  - HttpResponse with html structure and Internal styling
+  - HttpResponse with html structure
+  - HttpResponse with Javascript
+  - Template Folder creation and accessing of .html file
+  - Overview of MVC and MVT Design Pattern
+  
