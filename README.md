@@ -14,8 +14,8 @@ Django For 2nd Years AIML
 # Day-02(15-03-2023):
   - HttpRespose with html and css
   - HttpResponse with html and Inline css styling
-  - HttpResponse with html structure and Internal styling
   - HttpResponse with html structure
+  - HttpResponse with html structure and Internal styling
   - HttpResponse with Javascript
   - Template Folder creation and accessing of .html file
   - Overview of MVC and MVT Design Pattern
