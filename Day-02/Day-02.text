@@ -1,0 +1,34 @@
+Day-02[15-03-2023]:
+===================
+	Good Morning to All...
+
+	HttpResponse with html tag and inline styling
+	HttpResponse with javascript like alert method
+	HttpResponse with html structure and internal styling
+
+	Templates Folder Creation:
+	==========================
+		- It stores only .html files
+		- html file access without folder in templates
+		- html file access with folder exists in templates
+
+	render():
+	=========
+		render(selfparameter,'.html file location',dictionary)
+
+	Interface between Controller and Template
+	Overview of MVC and MVT Design Patterns
+
+
+	Task:
+	=====
+		- Class,Object,Method,Inheritance types,Constructor types
+		- Bootstrap4 Overview [Useage]
+		- Grid System
+		- Form Controls
+		- Card
+		- Container
+		- Jumbotron
+		- Colors
+		- Buttons
+		- Alerts
