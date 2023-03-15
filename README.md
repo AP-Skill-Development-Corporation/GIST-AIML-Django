@@ -17,6 +17,6 @@ Django For 2nd Years AIML
   - HttpResponse with html structure
   - HttpResponse with html structure and Internal styling
   - HttpResponse with Javascript
-  - Template Folder creation and accessing of .html file
+  - Templates Folder creation and accessing of .html file
   - Overview of MVC and MVT Design Pattern
   
