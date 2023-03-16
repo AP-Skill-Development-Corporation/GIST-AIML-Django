@@ -1,0 +1,116 @@
+Day-03[16-03-2023]:
+===================
+	Good Morning to All...
+
+	Static File Handling:
+	=====================
+		- {% load static %}
+		- for css
+			{% static 'css/filename.css' %}
+		- for javascript
+			{% static 'js/filename.js' %}
+		- for images
+			{% static 'images/filename.extensions' %}
+		- External CSS accessing from static folder
+
+	Form Methods:
+	=============
+		- GET
+		- POST
+
+	GET:
+	====
+		- It displays the values in url of html file
+		- By default the form method is "GET"
+		- It stores 2064 characters in an url
+		- It can access or submit the data to controllers or a database
+
+	POST:
+	=====
+		- It doesnt display any value in an url
+		- It hides the sensitive information of a user and submit to database
+		- It stores large characters
+		- It submits the data to controllers or a database	
+
+	Interface between controllers to templates and then templates to controller and to another template
+
+	Django Template Language:
+	=========================
+		- variable
+			=> {{variablename}}
+	
+	Bootstrap-4:
+	============
+		- Builtin classes for responsive web pages
+		- Based on device css styling will be changes
+
+	Grid systems:
+	=============
+		- 12 columns
+		- Device scalings
+			- xm => very small
+			- sm => small
+			- md => medium
+			- lg => large
+			- xl => Extra large
+		- To define grid first we need to follow the row and within n number of columns
+
+	container => It occupies some margins with left and right
+	container-fluid => It has no margins
+	jumbotron => It displays grey background with text center when some text is placed with tags
+	card => card-top => card-body => card-footer
+
+	For Padding and Margin we can assign points to occupy some pixels such as like 
+		=> mx-2,px-2
+		Here the points are from 1 to 5
+
+	margin:
+	=======
+		- mt => margin top
+		- mb => margin bottom
+		- ml => margin left
+		- mr => margin right
+		- mx => margin right and left
+		- my => margin top and bottom
+
+	padding:
+	========
+		- pt => padding top
+		- pb => padding bottom
+		- pl => padding left
+		- pr => padding right
+		- px => padding right and left
+		- py => padding top and bottom
+
+	colors:
+	=======
+		- primary
+		- success
+		- danger
+		- info
+		- dark
+		- secondary
+		- warning
+
+	buttons:
+	========
+		- btn btn-outline-color
+
+	background color:
+	=================
+		- bg-color
+
+	Models => To create a table with different fields such as 
+		=> CharField,IntegerField,DecimalField,EmailField etc.,
+
+	MakeMigrations => To Create an interface for a table based on the class 
+	Migrate => It creates a table based on the interface file
+
+	Task:
+	=====
+		- Bootstrap tables
+		- Class,Method,Object
+		- Packages and Modules by using OOPS Concept
+		- Banking Application by using OOPS 
+		- Revise all Topics from Day-1 to Today
+		

@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Employee Registration</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/demo.css' %}">
+	<style>
+		h3
+		{
+			margin-left: 30%;
+			margin-right: 30%;
+			padding: 9px;
+			border: 2px solid green;
+			border-radius: 25px;
+			background-color: cadetblue;
+			color:white;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h3>Register</h3>
+	<form method="post">
+		{% csrf_token %}
+		<label>Employee Name</label>
+		<input type="text" name="en"><br/>
+		<label>Employee Id</label>
+		<input type="text" name="ei"><br/>
+		<label>Employee Email</label>
+		<input type="text" name="ee"><br/>
+		<input type="reset" value="Clear">
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
