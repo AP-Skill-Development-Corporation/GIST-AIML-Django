@@ -19,4 +19,11 @@ Django For 2nd Years AIML
   - HttpResponse with Javascript
   - Templates Folder creation and accessing of .html file
   - Overview of MVC and MVT Design Pattern
+
+# Day-03(16-03-2023):
+  - Static Folder Creation and static files accessing
+  - Form Methods
+  - Interface between controllers to templates and templates to controller and then controller to another template
+  - Bootstrap 4 Overview about grid system,device scalings,card,container,jumbotron,alert,colors,button and form controls
+  - Model Creation,makemigrations and migrate
   
