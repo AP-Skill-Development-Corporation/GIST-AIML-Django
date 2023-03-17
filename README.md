@@ -26,4 +26,12 @@ Django For 2nd Years AIML
   - Interface between controllers to templates and templates to controller and then controller to another template
   - Bootstrap 4 Overview about grid system,device scalings,card,container,jumbotron,alert,colors,button and form controls
   - Model Creation,makemigrations and migrate
-  
+
+# Day-04(17-03-2023):
+  - ORM Overview,ORM Queries and CRUD Operation for User table
+  - Template Blocks
+  - Superuser Creation
+  - Roles of Users
+  - Forms Concept for exisiting model
+  - Widgets Concept
+  - User Registration and Authorization
