@@ -1,0 +1,146 @@
+Day-04[17-03-2023]:
+===================
+	Good Morning to All..
+
+	ORM [Object Relational Mapper]:
+	===============================
+		- cmd
+		- python manage.py shell
+					or
+		  manage.py shell
+
+	ORM Queries:
+	============
+		Create:
+		-------
+			save():
+				objectname = classname(fieldname1="value1",fieldname2="value2")
+				objectname.save()
+			create():
+				objectname = classname.objects.create(fieldname="value")
+			Note: In create method no need to use save method it inserts directly without any method
+
+		Reading:
+		--------
+			get():
+				- Need to use only unique values to access if we are accessing the duplicate values it shows an error or any record is not exists then it also shows errors
+				- objectname = classname.objects.get(fieldname="value")
+				- It access only single record value
+
+			filter():
+				- It is used for duplicate record values if the value is not existing in table it shows empty without any errors
+				- objectname = classname.objects.filter(fieldname="value")
+				- It access n number of records based on the value in a table. To display all records then we need to use the loops to display each and every field in that table
+
+			slicing:
+				- We can access the particular record values from and to based on the indexing
+				- objectname = classname.objects.all()[start:stop]
+
+			all():
+				- We can access all n number of records 
+				- objectname = classname.objects.all()
+
+		Updating:
+		---------
+			- We can update the value based on the get method for any field values
+			- objectname = classname.objects.get(fieldname=value)
+			- objectname.fieldname = newvalue
+			- objectname.save()
+
+		Delete:
+		-------
+			single record:
+				- We can delete single record by using get method
+				- objectname = classname.objects.get(fieldname="value")
+				- objectname.delete()
+								or
+				- objectname = classname.objects.get(fieldname=value).delete()
+
+			Multiple records:
+				- We an delete n number of duplicate records by using filter
+				- objectname = classname.objects.filter(fieldname=value)
+				- objectname.delete()
+								or
+				- objectname = classname.objects.filter(fieldname=value).delete()
+
+			All records:
+				- We can delete all records by using the all
+				- objectname = classname.objects.all()
+								or
+				- objectname = classname.objects.all().delete()
+
+
+	CRUD Operations to a userdefined model by using bootstrap 4 stylings
+
+
+	Template Blocks:
+	================
+		- variable
+			=> {{variablename}}
+		- Conditional statements
+			=> {% if condition %}
+					//stmnts
+			   {% endif %}
+			=> {% if condition %}
+					//stmnts
+			   {% else %}
+			   		//stmnts
+			   {% endif %}
+			=> similarly for elif 
+		- Loops
+			=> {% for iterationvariablename in iterator %}
+							//stmnts
+			   {% endfor %}
+			=> similarly for while
+		- urls
+			=> {% url 'url name in path' %}
+		- Static
+			=> {% load static %}
+			=> {% url static 'css/filename.css' %}
+			=> {% url static 'js/filename.js' %}
+			=> {% url static 'jquery/filename.js' %}
+			=> {% url static 'images/filename.extension' %}
+		- Include => To access the another template file within a file
+			=> {% include 'folder/filename.extension' %}
+		- Extends => It access the main file for a link to apply some stylings
+			=> {% extends 'folder/filename.extension' %}
+		- Title
+			=> {% block title %}Content name {% endblock %}
+		- Blocks
+			=> {% block content %}
+					//stmnts
+			   {% endblock %}
+
+	SuperUserCreation:
+	==================
+		=> cmd
+		=> python manage.py createsuperuser
+						or
+		   manage.py createsuperuser
+		=> After need to enter admin name or choose default name that is username exist for a system
+		=> Enter email or else we can skip that field value
+		=> Enter password but password wont display what we are entering
+		=> Re-enter password again for confirming the password
+		=> Then validation option has to be decided by user then press "y" for creating a user
+		=> Finally Admin account is created by using command prompt with the help of manage.py file
+
+	Form Creation by Existing model:
+	================================
+		- Existing model can be used by import the statements such as
+			- from django.contrib.auth.models import User
+			User is the existing model consists of default fields in it
+		- Existing form to create a user creation form
+			- from django.contrib.auth.forms import UserCreationForm
+		- In creating the form we can restrict the fields by using the fields in creating a new user class defined in forms.py file		   
+
+	Forms => To access the model and then we can display those fields to an html by using it in views
+		=> Instead of coding all fields with input it decreases the user work and code to create with particular field types
+
+	Widgets:
+	========
+		- To access the bootstrap styling we can apply it by using forms
+		- To restrict the field types to a form
+		- To use inputs to a form we need to use some class names to access styling to it in widget such classnames are TextInput,PasswordInput,NumberInput,FileInput etc.,
+	
+
+		
